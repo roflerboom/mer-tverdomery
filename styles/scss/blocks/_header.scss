@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: $header-higth;
+  column-gap: 20px;
+  padding-inline: 80px;
+  border-bottom: 1px solid #292b32;
+  @include mediaTablet {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    row-gap: 10px;
+    padding-inline: 15px;
+  }
+  @include mediaSmartphone {
+    padding-top: 10px;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__logo-img {
+  }
+
+  &__menu {
+    @include mediaTablet {
+      order: 1;
+      flex-basis: 100%;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    @include mediaSmartphone {
+      column-gap: 24px;
+    }
+  }
+
+  &__menu-item {
+    font-size: 12px;
+    @include mediaSmartphone {
+    }
+  }
+
+  &__menu-link {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-higth;
+    text-transform: uppercase;
+    tab-size: 12px;
+    letter-spacing: 1.2;
+    column-gap: 7px;
+    color: $text-light-gray;
+
+    &.is-current::after {
+      content: "";
+      width: 5px;
+      aspect-ratio: 1;
+      background-color: currentColor;
+      border-radius: 50%;
+    }
+
+    @include mediaSmartphone {
+      height: 32px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+
+    @include mediaSmartphone {
+      column-gap: 15px;
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    background-color: #25292b; /* Цвет фона инпута */
+    border-radius: 5px;
+    padding-right: 10px; /* Добавлено правое отступание */
+    width: 474px;
+  }
+
+  [type="search"] {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 14px 20px;
+    color: #ffffff; /* Белый текст */
+    font-size: 12px;
+    flex: 1; /* Изменено для занимания всего доступного пространства */
+    background-color: #25292b; /* Цвет фона инпута */
+  }
+
+  .search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .fas.fa-search {
+    color: #ffffff; /* Белый цвет для иконки */
+  }
+
+  &__book-button {
+  }
+
+  &__burger-button {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+
+    row-gap: 5px;
+    width: 40px;
+    aspect-ratio: 1;
+    padding-left: 7px;
+    background-color: transparent;
+    color: $white;
+    border: $border;
+    border-radius: $border-radius;
+    &:hover {
+      border-color: currentColor;
+      color: $accent;
+    }
+
+    &-line {
+      width: 8px;
+      height: 1px;
+      background-color: currentColor;
+      box-shadow: 16px 0 0 currentColor;
+    }
+  }
+}

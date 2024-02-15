@@ -1,0 +1,30 @@
+.banner__video-play {
+  padding-top: 60px;
+  position: relative;
+  // width: 130px;
+  height: 130px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  // background: white;
+  // border: 10px solid burlywood;
+  text-align: center;
+  // line-height: 200px;
+  font-size: 13px;
+  line-height: 1.25;
+  letter-spacing: 0.1rem;
+  transform: rotate(-30deg);
+  &::before {
+    position: absolute;
+
+    content: url("../../../src/icons/Play-2.svg");
+    // background-image: url("../../../src/icons/Play-2.svg");
+    transform: rotate(30deg);
+  }
+}
+
+span {
+  display: inline-block;
+  width: 25px;
+  position: absolute;
+  transform: translate(0, 80%) rotate(var(--rot)) translate(0, -60px);
+}

@@ -1,0 +1,234 @@
+.advantages {
+  // .advantages__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+  }
+  // .advantages__card
+
+  &__card {
+    display: flex;
+    // grid-template-columns: 2fr 1fr;
+    border-radius: 28px;
+    overflow: hidden;
+    // justify-content: space-between;
+    background-color: $card-bg-color-dark;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 72px;
+    width: 100%;
+  }
+  &__item-wrapper {
+    display: flex;
+    gap: 75px;
+  }
+  // .advantages__title
+  &__center {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+  }
+
+  // .advantages__left
+
+  &__left {
+    & .advantages__text {
+      padding-bottom: 270px;
+    }
+  }
+
+  // .advantages__subtitle
+
+  // .advantages__text
+
+  // .advantages__right
+
+  &__right {
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 1.3;
+    color: $white;
+    padding-block: 25px;
+    &.centered {
+      position: relative;
+      text-align: center;
+
+      &::after {
+        content: url(../../../src/images/advantages/advantages2.png);
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        translate: -50% -50%;
+        // width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+      }
+    }
+  }
+
+  // .advantages__table-wrapper
+  &__image {
+  }
+  &__table {
+    width: 100%;
+
+    position: relative;
+
+    th {
+      margin-top: 70px;
+      padding-block: 20px;
+      // text-align: left;
+      text-transform: uppercase;
+      color: $text-gray;
+      // padding-bottom: 30px;
+    }
+    td {
+      // padding-block: 14px;
+      line-height: 2.6;
+      padding-top: 6px;
+      color: $text-light-gray;
+      font-size: 16px;
+      border-bottom: 1px solid $text-dark;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr td:last-child {
+      text-align: right;
+    }
+    tr:last-child td:last-child {
+      text-align: left;
+      &.align-right {
+        text-align: right;
+      }
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  #item-0 {
+    position: relative;
+    grid-area: 1 / 1 / 3 / 3;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 77px;
+    padding-left: 72px;
+    flex-direction: column;
+    margin-bottom: 130px;
+    height: 100%;
+    z-index: -1;
+    & img {
+      // width: 100%;
+      // height: 100%;
+      // margin-top: 150px;
+      position: absolute;
+      // position: absolute;
+      // top: 80%;
+      z-index: -1;
+
+      right: 0;
+      bottom: 0;
+      // translate: -50% -50%;
+      // width: 100%;
+      // height: 100%;
+      // aspect-ratio: 1;
+      // align-items: end;
+    }
+  }
+  #item-1 {
+    grid-area: 1 / 3 / 2 / 6;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 72px;
+    padding-block: 107px;
+    // padding-bottom: 80px;
+    width: 100%;
+    & img {
+      position: absolute;
+      // width: 40%;
+      // aspect-ratio: 1;
+      height: 310px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  #item-2 {
+    grid-area: 2 / 3 / 3 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__card-text-center {
+    gap: 14px;
+  }
+  &__card-grid-link {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 56px;
+  }
+  &__card-grid {
+    background-color: $card-bg-color-dark;
+    border-radius: 28px;
+    overflow: hidden;
+
+    .btn__banner-buy {
+      display: flex;
+      text-align: end;
+    }
+    & p {
+      font-size: 20px;
+      line-height: 1.6;
+      letter-spacing: 0;
+      // padding-block: 107px;
+      width: 316px;
+      // padding-top: 107px;
+    }
+    & img {
+    }
+  }
+
+  // .advantages__subtitle
+
+  &__subtitle {
+    font-size: 24px;
+    color: $white;
+    line-height: 1.5;
+  }
+
+  // .advantages__text
+
+  &__text {
+    line-height: 1.8;
+    color: $text-light-gray;
+  }
+  &__big-text {
+    font-size: 200px;
+    line-height: 1.35;
+  }
+}

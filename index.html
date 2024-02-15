@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/css/reset.css" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <title>MET</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img
+          src="./src/icons/logo.svg"
+          alt="MET"
+          class="header__logo-img"
+          width="60"
+          height="24" />
+      </a>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link is-current">компания</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">продукция</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">Дилеры</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">инфоцентр</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">проверка подлинности</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="header__search">
+          <input type="search" placeholder="Поиск" />
+          <button type="submit" class="search-button">
+            <img src="./src/icons/Search.svg" alt="" />
+          </button>
+        </div>
+        <a href=""><img src="./src/icons/Cart.svg" alt="" /></a>
+        <a href=""><img src="./src/icons/User.svg" alt="" /></a>
+
+        <button
+          class="header__burger-button visually-hidden"
+          type="button"
+          title="Open menu">
+          <span class="header__burger-button-line"></span>
+          <span class="header__burger-button-line"></span>
+          <span class="header__burger-button-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="banner container">
+        <h1 class="visually-hidden">MET Меры твердости Проверка подлинности</h1>
+        <div class="banner__video">
+          <div
+            class="banner__video-title"
+            data-list="06 05 04 03 02 "
+            data-red="01">
+            Точность без <br />
+            компромисcов
+          </div>
+          <div class="banner__video-play">
+            <!-- <img src="./src/icons/Play-2.svg" alt="" /> -->
+          </div>
+        </div>
+        <div class="banner__center-list">
+          <button class="btn__blur">Твердомеры</button>
+
+          <div class="banner__rigth">
+            <div class="banner__title">Меры <br />твердости</div>
+            <div class="banner__subtitle">Проверка подлинности</div>
+          </div>
+        </div>
+        <div class="banner__bottom">
+          <a class="scroll-down" href="/">
+            <img src="/src/icons/Scroll-down.svg" alt="" /> вниз</a
+          >
+          <div class="banner__bottom-list">
+            <button class="btn__banner-buy">Купить</button>
+            <img
+              src="./src/icons/si.png"
+              class="banner__seal"
+              alt="ГОСРЕЕСТР средств измерений" />
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages container">
+        <ul class="advantages__list">
+          <li class="advantages__card">
+            <div class="advantages__item">
+              <div class="advantages__title culomn">
+                Достоверное измерение <br />
+                твердости по всем шкалам
+              </div>
+              <div class="advantages__item-wrapper">
+                <table class="advantages__table">
+                  <thead>
+                    <tr>
+                      <th>Основные</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Роквелла</td>
+                      <td>HRC</td>
+                    </tr>
+                    <tr>
+                      <td>Бринелля</td>
+                      <td>HB</td>
+                    </tr>
+                    <tr>
+                      <td>Виккерса</td>
+                      <td>HV</td>
+                    </tr>
+                    <tr>
+                      <td>Шора</td>
+                      <td class="align-right">HSD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="advantages__table">
+                  <thead>
+                    <tr>
+                      <th>Дополнительные</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Роквелла</td>
+                      <td>HRB</td>
+                    </tr>
+                    <tr>
+                      <td>Супер-Роквелла</td>
+                      <td>HRN / HRT</td>
+                    </tr>
+                    <tr>
+                      <td>Лейба</td>
+                      <td>HL</td>
+                    </tr>
+                    <tr>
+                      <td>и другие...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <img
+              class="advantages__image"
+              src="./src/images/advantages/advantages1.png"
+              alt="" />
+          </li>
+
+          <li class="advantages__card">
+            <div class="advantages__item">
+              <div class="advantages__title centered">
+                Ультразвуковой и <br />
+                динамический датчики
+              </div>
+              <div class="advantages__center">
+                <div class="advantages__left">
+                  <div class="advantages__subtitle">Включен в Госреестр СИ</div>
+                  <ul class="advantages__text">
+                    ― Действие поверки 1 год<br />
+                    ― Поставляется поверенным
+                  </ul>
+                </div>
+                <div class="advantages__right">
+                  <div class="advantages__subtitle">
+                    Быстрая калибровка <br />по мерам 1 разряда
+                  </div>
+                  <a class="red" href="/">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <!-- <img src="./src/images/advantages/advantages2.png" alt="" /> -->
+          </li>
+
+          <li class="advantages__card">
+            <img src="src/images/advantages/advantages3.png" alt="" />
+            <div class="advantages__item">
+              <div class="advantages__list">
+                <div class="advantages__wrap">
+                  <div class="advantages__title">
+                    Измерение твёрдости <br />по основным шкалам
+                  </div>
+                  <div class="advantages__text mb-5">
+                    Достигается за счет калибровки только с помощью эталонных
+                    мер твердости без использования переводных таблиц, которые
+                    «зашиты» в программы других твердомеров, увеличивающих
+                    погрешность измерения.
+                  </div>
+                  <a href="/" class="btn__banner-buy mt-5">выбрать товары</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="advantages__cards">
+          <div class="advantages__card-grid" id="item-0">
+            <div class="advantages__title">Высокая степень защиты корпуса</div>
+            <div class="advantages__text">
+              Влагозащищенность: IP65 <br />
+              Температура: от -20°C до + 60°C <br />
+              Ударопрочность: IK06
+            </div>
+            <img src="./src/images/advantages/advantages4.png" alt="" />
+          </div>
+          <div class="advantages__card-grid" id="item-1">
+            <p>
+              Удобная передача и обработка данных на компьютере через
+              высокоскоростной USB порт и специальное программное обеспечение.
+            </p>
+            <img src="./src/images/advantages/advantages5.png" alt="1" />
+          </div>
+          <div class="advantages__card-grid" id="item-2">
+            <div class="advantages__card-grid-link">
+              <a href="/" class="btn__banner-buy">Подробнее</a>
+            </div>
+            <div class="advantages__card-text-center d-flex align-items-center">
+              <div class="advantages__big-text">3</div>
+              <div class="advantages__title">
+                года <br />
+                гарантии
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products container-wide light">
+        <div class="products__title">Наша продукция</div>
+        <div class="products__toggles">
+          <div class="products__toggle">Твердомеры</div>
+          <div class="products__toggle">Меры твердости</div>
+        </div>
+        <div class="products__toggles-catalog">В каталог</div>
+        <div class="products__items">
+          <div class="products__item">
+            <div class="products__item-title">
+              Ультразвуковой твердомер МЕТ-УДА
+            </div>
+            <img
+              src="./src/images/products/1-3png 2.png"
+              alt=""
+              class="products__item-img" />
+            <div class="products__item-footer">
+              <div class="products__item-footer-part">
+                <div class="products__item-price-discount">85 200</div>
+                <div class="products__item-price">79 368</div>
+              </div>
+              <div class="products__item-footer-part">
+                <button class="btn__product-cart red">
+                  <svg
+                    width="22"
+                    height="18"
+                    viewBox="0 0 22 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.1494 5.72848L0.856796 0.199951H3.8L5.71981 3.39995H21.0662L16.7735 11.6926H7.69372L4.1494 5.72848ZM7.34505 6.06662L9.23774 9.02597H15.1254L16.7515 6.06662H7.34505Z"
+                      fill="white" />
+                    <path
+                      d="M11.1495 15.826C11.1495 16.9305 10.2541 17.826 9.14949 17.826C8.04492 17.826 7.14948 16.9305 7.14948 15.826C7.14948 14.7214 8.04492 13.826 9.14949 13.826C10.2541 13.826 11.1495 14.7214 11.1495 15.826Z"
+                      fill="white" />
+                    <path
+                      d="M14.4828 17.826C15.5874 17.826 16.4828 16.9305 16.4828 15.826C16.4828 14.7214 15.5874 13.826 14.4828 13.826C13.3782 13.826 12.4828 14.7214 12.4828 15.826C12.4828 16.9305 13.3782 17.826 14.4828 17.826Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="btn__product-cart black">
+                  <svg
+                    width="14"
+                    height="12"
+                    viewBox="0 0 14 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.92893 1.75748L8.34315 0.343262L14 6.00012L8.34315 11.657L6.92893 10.2428L10.1716 7.00012L0 7.00012L1.74846e-07 5.00012L10.1716 5.00012L6.92893 1.75748Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <div class="products__item-price">79 368</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

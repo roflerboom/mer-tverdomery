@@ -1,0 +1,136 @@
+@import "../for-js/banner-js";
+
+.banner {
+  // .banner__video
+  position: relative;
+  min-height: calc(100vh - $header-higth);
+  padding-top: 73px;
+
+  &__video {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .banner__video-title
+
+  &__video-title {
+    position: relative;
+    font-size: 32px;
+    color: $text-light-gray;
+    line-height: 1.35;
+    &::before {
+      position: absolute;
+      content: attr(data-list);
+      font-size: 13px;
+      transform: rotate(-90deg);
+      width: 200px;
+      left: -180px;
+      top: 85px;
+      letter-spacing: 5px;
+    }
+    &::after {
+      position: absolute;
+      content: attr(data-red);
+      color: $accent;
+      font-size: 13px;
+      transform: rotate(-90deg);
+      left: -92px;
+      top: 10px;
+      letter-spacing: 5px;
+    }
+  }
+
+  // .banner__video-play
+
+  &__video-play {
+  }
+
+  // .banner__goods
+
+  &__goods {
+  }
+  &__center-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position: absolute;
+    // padding-top: -180px;
+    // bottom: 180px;
+    // width: 1427px;
+    // gap: 212px;
+  }
+  &__img-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    // gap: 85px;
+  }
+  // .banner__list
+
+  &__rigth {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: end;
+    width: 600px;
+  }
+  &__image {
+    // position: absolute;
+    // // left: 50%;
+    // bottom: -50px;
+  }
+  // .banner__title
+
+  &__title {
+    position: relative;
+    font-size: 72px;
+    line-height: 1.25;
+    &::before {
+      position: absolute;
+      content: url(../../../src/images/main1.png);
+      top: 100%;
+      right: 100%;
+      translate: -10% -50%;
+    }
+  }
+
+  // .banner__subtitle
+
+  &__subtitle {
+    position: relative;
+    width: max-content;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 88px;
+      height: 1px;
+      background-color: $white;
+      // aspect-ratio: 1;
+      left: -112px;
+      top: 12px;
+    }
+  }
+  &__bottom {
+    position: absolute;
+    left: -107px;
+    bottom: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 185px;
+    &-list {
+      display: flex;
+      min-width: 1440px;
+      justify-content: space-between;
+      align-items: end;
+    }
+  }
+  // .banner__seal
+
+  &__seal {
+  }
+}
+.visually-hidden {
+}
