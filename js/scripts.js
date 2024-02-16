@@ -2,3 +2,12 @@ document.querySelector(".banner__video-play").innerHTML = "СМОТРЕТЬ ВИ
   .split("")
   .map((e, i) => `<span style="--rot:${i * 12}deg">${e}</span>`)
   .join("");
+
+$(document).ready(function () {
+  $(".slider").slick({
+    slidesToShow: 3, // Количество отображаемых карточек
+    slidesToScroll: 1, // Количество карточек, прокручиваемых за раз
+    autoplay: false, // Автоматическое воспроизведение слайдов
+    autoplaySpeed: 2000, // Интервал между слайдами в миллисекундах
+  });
+});

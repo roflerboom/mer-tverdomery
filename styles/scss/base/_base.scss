@@ -100,7 +100,7 @@ p {
   margin-inline: auto;
 }
 .light {
-  background-color: $bg-color-light;
+  background-color: $white;
 }
 .section__description {
   color: $white;
@@ -129,6 +129,6 @@ p {
 
 section {
   & .light {
-    background-color: $bg-color-light;
+    background-color: $white;
   }
 }

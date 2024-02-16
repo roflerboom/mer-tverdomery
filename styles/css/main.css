@@ -91,7 +91,7 @@ p {
 }
 
 .light {
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 .section__description {
@@ -123,7 +123,7 @@ p {
 }
 
 section .light {
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 .btn {
@@ -134,6 +134,9 @@ section .light {
 .btn__blur {
   position: relative;
   text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
   color: #fff;
   font-size: 32px;
 }
@@ -182,6 +185,29 @@ section .light {
   height: 2px;
   top: 20px;
   background-color: #cbcecf;
+}
+
+.btn__product {
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.red {
+  background-color: #ff3e41;
+}
+.red svg {
+  filter: invert(1);
+}
+
+.black {
+  background-color: #1b1f22;
+}
+.black svg {
+  filter: invert(1);
 }
 
 a.red {
@@ -614,4 +640,42 @@ span {
 .advantages__big-text {
   font-size: 200px;
   line-height: 1.35;
+}
+
+.products__title {
+  color: #454545;
+  font-size: 40px;
+}
+.products__toggles {
+  display: flex;
+}
+.products__items {
+  display: flex;
+  gap: 30px;
+}
+.products__item {
+  background-color: #f5f5f5;
+  border-radius: 35px;
+  padding: 40px 48px 40px 40px;
+}
+.products__item-title {
+  width: 220px;
+  font-size: 18px;
+  color: #454545;
+  line-height: 1.5;
+}
+.products__item-footer-part h2 {
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+  font-size: 13px;
+  color: #cbcecf;
+  text-transform: none;
+}
+.products__item-price {
+  color: #454545;
+  font-size: 24px;
+}
+.products__item-price-discount {
+  color: #cbcecf;
+  text-decoration: line-through;
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
