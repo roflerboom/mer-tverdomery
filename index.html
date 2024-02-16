@@ -260,130 +260,424 @@
       <section class="products light">
         <div class="container">
           <div class="products__title">Наша продукция</div>
-          <div class="products__toggles">
-            <div class="products__toggle">Твердомеры</div>
-            <div class="products__toggle">Меры твердости</div>
-            <div class="products__toggles-catalog">В каталог</div>
+          <div class="products__toggles d-flex justify-content-center">
+            <div class="products__toggle-prod col-7">
+              <div class="products__toggle btn selected">Твердомеры</div>
+              <div class="products__toggle btn">Меры твердости</div>
+            </div>
+            <div class="products__toggles-catalog col-4">В каталог</div>
           </div>
 
-          <div class="products__items">
-            <div class="products__item">
-              <!-- Ваши карточки товара здесь -->
-              <!-- Содержимое первой карточки товара -->
-              <div class="products__item-title">
-                Ультразвуковой твердомер МЕТ-УДА
-              </div>
-              <img
-                src="./src/images/products/1-3png 2.png"
-                alt=""
-                class="products__item-img" />
-              <div class="products__item-footer">
-                <div class="products__item-footer-part">
-                  <h2>В наличии</h2>
-                  <div class="d-flex">
-                    <div class="products__item-price-discount">85 200</div>
-                    <div class="products__item-price">79 368</div>
+          <div class="slider-wrapper">
+            <button class="products__prev-btn btn">
+              <svg
+                width="31"
+                height="58"
+                viewBox="0 0 31 58"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M30 1L2 29L30 57"
+                  stroke="#7F8589"
+                  stroke-width="1.5" />
+              </svg>
+            </button>
+            <div class="products__items">
+              <div class="products__item">
+                <!-- Ваши карточки товара здесь -->
+                <!-- Содержимое первой карточки товара -->
+                <div class="products__item-title">
+                  Ультразвуковой твердомер МЕТ-УДА
+                </div>
+                <img
+                  src="./src/images/products/1-3png 2.png"
+                  alt=""
+                  class="products__item-img" />
+                <div class="products__item-footer">
+                  <div class="products__item-footer-part">
+                    <h2>В наличии</h2>
+                    <div class="d-flex">
+                      <div class="products__item-price-discount ml-3">
+                        85 200
+                      </div>
+                      <div class="products__item-price">79 368</div>
+                    </div>
+                  </div>
+                  <div class="products__item-footer-part">
+                    <button class="btn__product red">
+                      <svg
+                        width="22"
+                        height="18"
+                        viewBox="0 0 22 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.1494 5.72848L0.856796 0.199951H3.8L5.71981 3.39995H21.0662L16.7735 11.6926H7.69372L4.1494 5.72848ZM7.34505 6.06662L9.23774 9.02597H15.1254L16.7515 6.06662H7.34505Z"
+                          fill="white" />
+                        <path
+                          d="M11.1495 15.826C11.1495 16.9305 10.2541 17.826 9.14949 17.826C8.04492 17.826 7.14948 16.9305 7.14948 15.826C7.14948 14.7214 8.04492 13.826 9.14949 13.826C10.2541 13.826 11.1495 14.7214 11.1495 15.826Z"
+                          fill="white" />
+                        <path
+                          d="M14.4828 17.826C15.5874 17.826 16.4828 16.9305 16.4828 15.826C16.4828 14.7214 15.5874 13.826 14.4828 13.826C13.3782 13.826 12.4828 14.7214 12.4828 15.826C12.4828 16.9305 13.3782 17.826 14.4828 17.826Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <button class="btn__product black">
+                      <svg
+                        width="14"
+                        height="12"
+                        viewBox="0 0 14 12"
+                        fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.92893 1.75748L8.34315 0.343262L14 6.00012L8.34315 11.657L6.92893 10.2428L10.1716 7.00012L0 7.00012L1.74846e-07 5.00012L10.1716 5.00012L6.92893 1.75748Z"
+                          fill="white" />
+                      </svg>
+                    </button>
                   </div>
                 </div>
-                <div class="products__item-footer-part">
-                  <button class="btn__product red">
-                    <svg
-                      width="22"
-                      height="18"
-                      viewBox="0 0 22 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.1494 5.72848L0.856796 0.199951H3.8L5.71981 3.39995H21.0662L16.7735 11.6926H7.69372L4.1494 5.72848ZM7.34505 6.06662L9.23774 9.02597H15.1254L16.7515 6.06662H7.34505Z"
-                        fill="white" />
-                      <path
-                        d="M11.1495 15.826C11.1495 16.9305 10.2541 17.826 9.14949 17.826C8.04492 17.826 7.14948 16.9305 7.14948 15.826C7.14948 14.7214 8.04492 13.826 9.14949 13.826C10.2541 13.826 11.1495 14.7214 11.1495 15.826Z"
-                        fill="white" />
-                      <path
-                        d="M14.4828 17.826C15.5874 17.826 16.4828 16.9305 16.4828 15.826C16.4828 14.7214 15.5874 13.826 14.4828 13.826C13.3782 13.826 12.4828 14.7214 12.4828 15.826C12.4828 16.9305 13.3782 17.826 14.4828 17.826Z"
-                        fill="white" />
-                    </svg>
-                  </button>
-                  <button class="btn__product black">
-                    <svg
-                      width="14"
-                      height="12"
-                      viewBox="0 0 14 12"
-                      fill="white"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M6.92893 1.75748L8.34315 0.343262L14 6.00012L8.34315 11.657L6.92893 10.2428L10.1716 7.00012L0 7.00012L1.74846e-07 5.00012L10.1716 5.00012L6.92893 1.75748Z"
-                        fill="white" />
-                    </svg>
-                  </button>
+              </div>
+              <div class="products__item">
+                <!-- Ваши карточки товара здесь -->
+                <!-- Содержимое первой карточки товара -->
+                <div class="products__item-title">
+                  Ультразвуковой твердомер МЕТ-Д1А
+                </div>
+                <img
+                  src="./src/images/products/1-3png 2.png"
+                  alt=""
+                  class="products__item-img" />
+                <div class="products__item-footer">
+                  <div class="products__item-footer-part">
+                    <h2>В наличии</h2>
+                    <div class="d-flex">
+                      <!-- <div class="products__item-price-discount ml-3">85 200</div> -->
+                      <div class="products__item-price">82 100</div>
+                    </div>
+                  </div>
+                  <div class="products__item-footer-part">
+                    <button class="btn__product red">
+                      <svg
+                        width="22"
+                        height="18"
+                        viewBox="0 0 22 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.1494 5.72848L0.856796 0.199951H3.8L5.71981 3.39995H21.0662L16.7735 11.6926H7.69372L4.1494 5.72848ZM7.34505 6.06662L9.23774 9.02597H15.1254L16.7515 6.06662H7.34505Z"
+                          fill="white" />
+                        <path
+                          d="M11.1495 15.826C11.1495 16.9305 10.2541 17.826 9.14949 17.826C8.04492 17.826 7.14948 16.9305 7.14948 15.826C7.14948 14.7214 8.04492 13.826 9.14949 13.826C10.2541 13.826 11.1495 14.7214 11.1495 15.826Z"
+                          fill="white" />
+                        <path
+                          d="M14.4828 17.826C15.5874 17.826 16.4828 16.9305 16.4828 15.826C16.4828 14.7214 15.5874 13.826 14.4828 13.826C13.3782 13.826 12.4828 14.7214 12.4828 15.826C12.4828 16.9305 13.3782 17.826 14.4828 17.826Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <button class="btn__product black">
+                      <svg
+                        width="14"
+                        height="12"
+                        viewBox="0 0 14 12"
+                        fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.92893 1.75748L8.34315 0.343262L14 6.00012L8.34315 11.657L6.92893 10.2428L10.1716 7.00012L0 7.00012L1.74846e-07 5.00012L10.1716 5.00012L6.92893 1.75748Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="products__item">
+                <!-- Ваши карточки товара здесь -->
+                <!-- Содержимое первой карточки товара -->
+                <div class="products__item-title">
+                  Ультразвуковой твердомер МЕТ-УДА
+                </div>
+                <img
+                  src="./src/images/products/1-3png 2.png"
+                  alt=""
+                  class="products__item-img" />
+                <div class="products__item-footer">
+                  <div class="products__item-footer-part">
+                    <h2>В наличии</h2>
+                    <div class="d-flex">
+                      <div class="products__item-price-discount ml-3">
+                        85 200
+                      </div>
+                      <div class="products__item-price">79 368</div>
+                    </div>
+                  </div>
+                  <div class="products__item-footer-part">
+                    <button class="btn__product red">
+                      <svg
+                        width="22"
+                        height="18"
+                        viewBox="0 0 22 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.1494 5.72848L0.856796 0.199951H3.8L5.71981 3.39995H21.0662L16.7735 11.6926H7.69372L4.1494 5.72848ZM7.34505 6.06662L9.23774 9.02597H15.1254L16.7515 6.06662H7.34505Z"
+                          fill="white" />
+                        <path
+                          d="M11.1495 15.826C11.1495 16.9305 10.2541 17.826 9.14949 17.826C8.04492 17.826 7.14948 16.9305 7.14948 15.826C7.14948 14.7214 8.04492 13.826 9.14949 13.826C10.2541 13.826 11.1495 14.7214 11.1495 15.826Z"
+                          fill="white" />
+                        <path
+                          d="M14.4828 17.826C15.5874 17.826 16.4828 16.9305 16.4828 15.826C16.4828 14.7214 15.5874 13.826 14.4828 13.826C13.3782 13.826 12.4828 14.7214 12.4828 15.826C12.4828 16.9305 13.3782 17.826 14.4828 17.826Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <button class="btn__product black">
+                      <svg
+                        width="14"
+                        height="12"
+                        viewBox="0 0 14 12"
+                        fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.92893 1.75748L8.34315 0.343262L14 6.00012L8.34315 11.657L6.92893 10.2428L10.1716 7.00012L0 7.00012L1.74846e-07 5.00012L10.1716 5.00012L6.92893 1.75748Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="products__item">
+                <!-- Ваши карточки товара здесь -->
+                <!-- Содержимое первой карточки товара -->
+                <div class="products__item-title">
+                  Ультразвуковой твердомер МЕТ-УДА
+                </div>
+                <img
+                  src="./src/images/products/1-3png 2.png"
+                  alt=""
+                  class="products__item-img" />
+                <div class="products__item-footer">
+                  <div class="products__item-footer-part">
+                    <h2>В наличии</h2>
+                    <div class="d-flex">
+                      <div class="products__item-price-discount ml-3">
+                        85 200
+                      </div>
+                      <div class="products__item-price">79 368</div>
+                    </div>
+                  </div>
+                  <div class="products__item-footer-part">
+                    <button class="btn__product red">
+                      <svg
+                        width="22"
+                        height="18"
+                        viewBox="0 0 22 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.1494 5.72848L0.856796 0.199951H3.8L5.71981 3.39995H21.0662L16.7735 11.6926H7.69372L4.1494 5.72848ZM7.34505 6.06662L9.23774 9.02597H15.1254L16.7515 6.06662H7.34505Z"
+                          fill="white" />
+                        <path
+                          d="M11.1495 15.826C11.1495 16.9305 10.2541 17.826 9.14949 17.826C8.04492 17.826 7.14948 16.9305 7.14948 15.826C7.14948 14.7214 8.04492 13.826 9.14949 13.826C10.2541 13.826 11.1495 14.7214 11.1495 15.826Z"
+                          fill="white" />
+                        <path
+                          d="M14.4828 17.826C15.5874 17.826 16.4828 16.9305 16.4828 15.826C16.4828 14.7214 15.5874 13.826 14.4828 13.826C13.3782 13.826 12.4828 14.7214 12.4828 15.826C12.4828 16.9305 13.3782 17.826 14.4828 17.826Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <button class="btn__product black">
+                      <svg
+                        width="14"
+                        height="12"
+                        viewBox="0 0 14 12"
+                        fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.92893 1.75748L8.34315 0.343262L14 6.00012L8.34315 11.657L6.92893 10.2428L10.1716 7.00012L0 7.00012L1.74846e-07 5.00012L10.1716 5.00012L6.92893 1.75748Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="products__item">
-              <!-- Содержимое второй карточки товара -->
-              <div class="products__item-title">
-                Ультразвуковой твердомер МЕТ-УДА
-              </div>
-              <img
-                src="./src/images/products/1-3png 2.png"
-                alt=""
-                class="products__item-img" />
-              <div class="products__item-footer">
-                <div class="products__item-footer-part">
-                  <div class="products__item-price-discount">85 200</div>
-                  <div class="products__item-price">79 368</div>
-                </div>
-                <div class="products__item-footer-part">
-                  <button class="btn__product-cart red">
-                    <svg
-                      width="22"
-                      height="18"
-                      viewBox="0 0 22 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.1494 5.72848L0.856796 0.199951H3.8L5.71981 3.39995H21.0662L16.7735 11.6926H7.69372L4.1494 5.72848ZM7.34505 6.06662L9.23774 9.02597H15.1254L16.7515 6.06662H7.34505Z"
-                        fill="white" />
-                      <path
-                        d="M11.1495 15.826C11.1495 16.9305 10.2541 17.826 9.14949 17.826C8.04492 17.826 7.14948 16.9305 7.14948 15.826C7.14948 14.7214 8.04492 13.826 9.14949 13.826C10.2541 13.826 11.1495 14.7214 11.1495 15.826Z"
-                        fill="white" />
-                      <path
-                        d="M14.4828 17.826C15.5874 17.826 16.4828 16.9305 16.4828 15.826C16.4828 14.7214 15.5874 13.826 14.4828 13.826C13.3782 13.826 12.4828 14.7214 12.4828 15.826C12.4828 16.9305 13.3782 17.826 14.4828 17.826Z"
-                        fill="white" />
-                    </svg>
-                  </button>
-                  <button class="btn__product-cart black">
-                    <svg
-                      width="14"
-                      height="12"
-                      viewBox="0 0 14 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M6.92893 1.75748L8.34315 0.343262L14 6.00012L8.34315 11.657L6.92893 10.2428L10.1716 7.00012L0 7.00012L1.74846e-07 5.00012L10.1716 5.00012L6.92893 1.75748Z"
-                        fill="white" />
-                    </svg>
-                  </button>
-                  <div class="products__item-price">79 368</div>
-                </div>
-              </div>
-            </div>
+            <button class="products__next-btn btn">
+              <svg
+                width="31"
+                height="58"
+                viewBox="0 0 31 58"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M30 1L2 29L30 57"
+                  stroke="#7F8589"
+                  stroke-width="1.5" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
+
+      <section class="arguments container">
+        <div class="arguments__title title">Твердые аргументы</div>
+        <div class="arguments__cards">
+          <div class="arguments__card">
+            <div class="arguments__card-title">
+              <p>24</p>
+              года <br />
+              на рынке
+            </div>
+            <p class="arguments__card-text">
+              Центр «МЕТ» - разработчик высокоточных портативных твердомеров и
+              мер твердости. Портативные твердомеры МЕТ позволяют осуществлять
+              достоверный контроль твердости изделий из металла. Меры твердости
+              МЕТ – средства измерения, позволяющие осуществлять поверку и
+              калибровку твердомеров.
+            </p>
+            <div class="btn__arguments w-100">
+              <div class="d-flex gap-4">
+                <button class="btn__argument btn w-100 mb-3">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.7911 17.3904C21.9522 16.1906 22.6667 14.556 22.6667 12.7546C22.6667 9.07266 19.6819 6.08789 16 6.08789C12.3181 6.08789 9.33337 9.07266 9.33337 12.7546C9.33337 14.556 10.0479 16.1906 11.209 17.3904L10.0182 24.5354L11.9949 25.9122L16 23.6236L20.0052 25.9122L21.9819 24.5354L20.7911 17.3904ZM20 12.7546C20 14.9637 18.2092 16.7546 16 16.7546C13.7909 16.7546 12 14.9637 12 12.7546C12 10.5454 13.7909 8.75456 16 8.75456C18.2092 8.75456 20 10.5454 20 12.7546ZM18.3548 18.9934C17.6226 19.2699 16.829 19.4212 16 19.4212C15.1711 19.4212 14.3775 19.2699 13.6453 18.9934L13.1103 22.2035L16 20.5522L18.8898 22.2035L18.3548 18.9934Z"
+                      fill="white" />
+                  </svg>
+                  Сертификаты
+                </button>
+                <button class="btn__argument btn w-100 mb-3">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16 8.31991L17.6033 12.8314L17.8329 13.4775L18.5183 13.4962L23.3044 13.6268L19.5091 16.5457L18.9656 16.9637L19.1596 17.6214L20.5144 22.2136L16.5655 19.5061L16 19.1183L15.4345 19.5061L11.4857 22.2136L12.8405 17.6214L13.0345 16.9637L12.491 16.5457L8.69569 13.6268L13.4818 13.4962L14.1672 13.4775L14.3968 12.8314L16 8.31991Z"
+                      stroke="white"
+                      stroke-width="2" />
+                  </svg>
+                  Награды
+                </button>
+              </div>
+              <button class="btn__argument btn col-12">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.6667 20.6668H7.33337V7.3335H24.6667V24.6668L18.6667 20.6668ZM22 19.957L19.4053 18.0002H10V10.0002H22V19.957Z"
+                    fill="white" />
+                </svg>
+                Отзывы
+              </button>
+            </div>
+          </div>
+          <div class="arguments__card">
+            <div class="arguments__card-title">Нам доверяют</div>
+            <div class="arguments__company-logos">
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/lada-logo 1.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img
+                  src="./src/icons/arguments/bosch-logo-simple1.svg"
+                  alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/kamaz____ 1.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/rot-front-1 1.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/RZD 1.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/pocatom.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/logo 1.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/gaz 1.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/baltika.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/baikal 1.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/volkswagen-3 1.svg" alt="" />
+              </div>
+              <div class="arguments__company-logo">
+                <img src="./src/icons/arguments/severstal 1.svg" alt="" />
+              </div>
+            </div>
+            <a href="/" class="underlined">Все клиенты</a>
+          </div>
+        </div>
+        <div class="arguments__cards mt-4">
+          <div class="blue arguments__card-socials d-flex w-100">
+            <div class="">
+              <h5 class="arguments__social">telegram</h5>
+              <div class="arguments__social-name">tverdomery_met</div>
+            </div>
+            <img
+              src="./src/icons/arguments/telegram.svg"
+              alt="telegram"
+              class="arguments__social-logo" />
+          </div>
+          <div class="arguments__card-socials d-flex w-100">
+            <div class="">
+              <h5 class="arguments__social">email</h5>
+              <div class="arguments__social-name">mng@tverdomer.ru</div>
+            </div>
+            <img
+              src="./src/icons/arguments/email.svg"
+              alt="email"
+              class="arguments__social-logo" />
+          </div>
+          <div class="arguments__card-socials d-flex w-100">
+            <div class="">
+              <h5 class="arguments__social">whatsapp</h5>
+              <div class="arguments__social-name">8 (800) 222-75-26</div>
+            </div>
+            <img
+              src="./src/icons/arguments/whatsapp.svg"
+              alt="email"
+              class="arguments__social-logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="production container">
+        <h2 class="title">Наше производство</h2>
+      </section>
     </main>
 
-    <script src="./js/scripts.js"></script>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

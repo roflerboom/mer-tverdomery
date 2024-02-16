@@ -1,6 +1,19 @@
 a {
+  //
   &.red {
     color: $accent;
     text-decoration: underline;
+  }
+  &.underlined {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: $text-light-gray;
+    }
   }
 }
