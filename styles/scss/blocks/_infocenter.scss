@@ -1,0 +1,130 @@
+.infocenter {
+  // .infocenter__prev-btn
+  padding-block: 100px;
+
+  img {
+    border-radius: 28px;
+    height: 289px;
+    margin-bottom: 32px;
+  }
+  &__prev-btn {
+    color: $text-gray;
+  }
+  &__next-btn {
+    transform: rotate(180deg);
+    color: $text-dark;
+  }
+  // .infocenter__items
+
+  &__items {
+    width: 1314px;
+    height: 538px;
+    margin-bottom: 50px;
+  }
+
+  // .infocenter__item
+
+  &__item {
+    width: 418px;
+    height: 538px !important;
+    background-color: $card-bg-color-light;
+    border-radius: 28px;
+    position: relative;
+  }
+
+  &__item-content {
+    padding-inline-start: 32px;
+    padding-inline-end: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    // height: 100%;
+  }
+  // .infocenter__news
+
+  &__news {
+    color: $accent;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+
+  // .infocenter__item-title
+
+  &__item-title {
+    color: $text-dark;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 350px;
+    height: 90px;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Ограничивает количество строк */
+    line-clamp: 3;
+  }
+
+  // .infocenter__date
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-inline: 32px;
+    padding-bottom: 32px;
+  }
+  &__date {
+    font-size: 14px;
+    line-height: 1.35;
+    color: $text-light-gray;
+  }
+  &__link svg {
+    color: #000;
+  }
+
+  // .infocenter__next-btn
+
+  // .infocenter__all-posts
+
+  &__all-posts {
+    // position: relative;
+    color: $text-gray;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.35;
+    text-transform: uppercase;
+
+    width: max-content;
+    display: block;
+    margin: 0 auto; /* Центрирует элемент по горизонтали */
+    text-align: center; /* Выравнивает текст внутри блока по центру */
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 2px solid $bg-color-dark; /* Цвет и стиль линии */
+    }
+  }
+  .title {
+    color: $text-dark;
+  }
+}
+.light {
+}
+.container {
+}
+
+.slider-wrapper {
+}
+.d-flex {
+}
+.justify-content-center {
+}
+.btn {
+}

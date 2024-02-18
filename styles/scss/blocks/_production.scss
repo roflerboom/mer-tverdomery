@@ -1,0 +1,104 @@
+.production {
+  // .production__prev-btn
+
+  // .production__items
+
+  &__items {
+    gap: 72px;
+    & .slick-list {
+      max-width: 1314px;
+      margin-inline: 7px;
+    }
+  }
+
+  // .production__item
+
+  &__item {
+    position: relative;
+    max-width: 418px;
+    border-radius: 28px;
+    overflow: hidden;
+    margin-inline: 15px;
+    // &:hover {
+    //   filter: brightness(30%);
+    // }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с непрозрачностью 0.3 */
+      opacity: 0; /* Начальная прозрачность */
+      transition: opacity 0.3s ease;
+      background-image: url("../../../src/icons/production/Zoom-in.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:hover::before {
+      opacity: 1; /* Показать SVG при наведении */
+    }
+  }
+
+  // .production__next-btn
+  &__prev-btn {
+    color: $text-gray;
+  }
+  &__next-btn {
+    transform: rotate(180deg);
+    color: $text-gray;
+  }
+
+  &__items-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  &__item-grid {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    margin-inline: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с непрозрачностью 0.3 */
+      opacity: 0; /* Начальная прозрачность */
+      transition: opacity 0.3s ease;
+      background-image: url("../../../src/icons/production/Zoom-in.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:hover::before {
+      opacity: 1; /* Показать SVG при наведении */
+    }
+  }
+  .slick-dots li.slick-active button:before {
+    color: $bg-color-light;
+  }
+  .slick-dots li button:before {
+    color: $text-gray;
+  }
+}
+
+.container {
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 80px;
+}
+.slider-wrapper {
+}
+.btn {
+}
+.d-flex {
+}

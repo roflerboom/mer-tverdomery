@@ -1,4 +1,5 @@
 .btn {
+  display: inline-block;
   cursor: pointer;
   border: none;
   background: transparent;
@@ -44,7 +45,7 @@
     }
   }
   &__banner-buy {
-    display: flex;
+    display: inline-block;
 
     box-sizing: border-box;
     position: relative;
@@ -93,6 +94,20 @@
       border: 2px solid currentColor;
       // background-color: $bg-color-light;
     }
+  }
+  &__action-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: $white;
+    gap: 16px;
+    margin-block: 15px;
+    border-bottom: 1px solid $card-bg-color-dark;
+    width: 100%;
+    margin-bottom: 60px;
   }
 }
 .products__next-btn {

@@ -13,3 +13,24 @@ $(document).ready(function () {
     nextArrow: $(".products__next-btn"),
   });
 });
+
+$(".production__items").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+  prevArrow: $(".production__prev-btn"),
+  nextArrow: $(".production__next-btn"),
+});
+$(".infocenter__items").slick({
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: false,
+  variableWidth: true,
+  gap: 30,
+  prevArrow: $(".infocenter__prev-btn"),
+  nextArrow: $(".infocenter__next-btn"),
+});

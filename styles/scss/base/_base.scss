@@ -130,6 +130,7 @@ p {
 }
 
 section {
+  margin-block: 100px;
   & .light {
     background-color: $white;
   }
