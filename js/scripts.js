@@ -35,44 +35,6 @@ $(".infocenter__items").slick({
   nextArrow: $(".infocenter__next-btn"),
 });
 
-// Получаем все пункты меню
-const menuItems = document.querySelectorAll(".header__menu-item");
-
-// Проходимся по каждому пункту меню
-menuItems.forEach((item) => {
-  // Получаем подменю текущего пункта
-  const submenu = item.querySelector(".submenu");
-
-  // Если подменю есть, то добавляем обработчики событий для показа и скрытия
-  if (submenu) {
-    // Флаг для отслеживания, находится ли курсор на подменю
-    let isCursorOverSubmenu = false;
-
-    // При наведении на пункт меню показываем подменю
-    item.addEventListener("mouseenter", () => {
-      submenu.style.display = "block";
-    });
-
-    // При уходе курсора с пункта меню скрываем подменю, если курсор не находится на подменю
-    item.addEventListener("mouseleave", () => {
-      if (!isCursorOverSubmenu) {
-        submenu.style.display = "none";
-      }
-    });
-
-    // При наведении на подменю устанавливаем флаг в true
-    submenu.addEventListener("mouseenter", () => {
-      isCursorOverSubmenu = true;
-    });
-
-    // При уходе курсора с подменю устанавливаем флаг в false и скрываем подменю
-    submenu.addEventListener("mouseleave", () => {
-      isCursorOverSubmenu = false;
-      submenu.style.display = "none";
-    });
-  }
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const burgerButton = document.querySelector(".header__burger-button");
   const mobileMenu = document.querySelector(".header__mobile-menu");
