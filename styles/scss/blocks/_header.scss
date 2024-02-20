@@ -16,6 +16,23 @@
     padding-top: 10px;
   }
 
+  /* Скрываем основное меню и поиск в хедере по умолчанию */
+  &__menu,
+  &__search {
+    display: none;
+  }
+
+  /* Отображаем мобильное меню только на мобильных устройствах */
+  @media (max-width: 768px) {
+    &__mobile-menu {
+      display: block; /* Показываем мобильное меню */
+    }
+
+    &__burger-button {
+      display: block; /* Показываем бургер-иконку */
+    }
+  }
+
   &__logo {
     flex-shrink: 0;
   }
@@ -24,6 +41,11 @@
   }
 
   &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    height: 100%;
     @include mediaTablet {
       order: 1;
       flex-basis: 100%;
@@ -33,6 +55,7 @@
   &__menu-list {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
     column-gap: 50px;
     @include mediaSmartphone {
       column-gap: 24px;

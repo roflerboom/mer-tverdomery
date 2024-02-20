@@ -34,8 +34,8 @@ textarea
 
 .container {
   max-width: calc($container-width + $container-padding-x * 2);
-  margin-inline: auto;
-  padding-inline: $container-padding-x;
+  // margin-inline: auto;
+  // padding-inline: $container-padding-x;
 }
 
 h1,
@@ -130,8 +130,24 @@ p {
 }
 
 section {
-  margin-block: 100px;
+  // margin-block: 100px;
   & .light {
     background-color: $white;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: none;
+  font-size: 40px;
+  color: $white;
+  letter-spacing: 1.35;
+  text-align: center;
+  padding-bottom: 60px;
+  &.dark {
+    color: $text-dark;
   }
 }

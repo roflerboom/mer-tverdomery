@@ -1,10 +1,14 @@
 .advantages {
   // .advantages__list
-
+  padding-bottom: 100px;
+  &.container {
+  }
   &__list {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    padding-inline: 0;
     gap: 30px;
   }
   &__wrap {

@@ -1,4 +1,4 @@
-@import "./fonts/fonts-link.css";
+@import "../../fonts/fonts-link.css";
 @import "./base/vars";
 @import "./base/base";
 @import "./base/mixins";
@@ -12,3 +12,23 @@
 @import "./blocks/production";
 @import "./blocks/infocenter";
 @import "./blocks/footer";
+
+.submenu {
+  display: none; /* Скрыть подменю по умолчанию */
+  position: absolute; /* Абсолютное позиционирование для создания выпадающего эффекта */
+  background-color: #fff; /* Цвет фона подменю */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для подменю */
+}
+
+/* Показываем подменю, когда пользователь наводит курсор на родительский пункт меню */
+.header__menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 10px; /* Отступы внутри элементов подменю */
+}
+
+.submenu li:hover {
+  background-color: #f5f5f5; /* Изменяем цвет фона при наведении на пункт меню */
+}

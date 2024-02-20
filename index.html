@@ -6,9 +6,6 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./styles/css/reset.css" />
-    <link rel="stylesheet" href="./styles/css/main.css" />
-    <!-- Добавьте в секцию head вашего HTML-документа -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -17,6 +14,19 @@
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./styles/scss/base/reset.css" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link rel="shortcut icon" href="./src/icons/logo.svg" type="image/x-icon" />
+    <!-- Добавьте в секцию head вашего HTML-документа -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      defer></script>
+    <script src="./js/scripts.js" defer></script>
 
     <title>MET</title>
   </head>
@@ -33,22 +43,30 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li class="header__menu-item">
-            <a href="/" class="header__menu-link is-current">компания</a>
+            <a href="#advantages" class="header__menu-link is-current"
+              >компания</a
+            >
           </li>
           <li class="header__menu-item">
-            <a href="/" class="header__menu-link">продукция</a>
+            <a href="" class="header__menu-link">продукция</a>
+            <ul class="submenu">
+              #products
+              <li><a href="#">Подкатегория 1</a></li>
+              <li><a href="#">Подкатегория 2</a></li>
+              <li><a href="#">Подкатегория 3</a></li>
+            </ul>
           </li>
           <li class="header__menu-item">
-            <a href="/" class="header__menu-link">Дилеры</a>
+            <a href="#arguments" class="header__menu-link">Дилеры</a>
           </li>
           <li class="header__menu-item">
-            <a href="/" class="header__menu-link">инфоцентр</a>
+            <a href="#infocenter" class="header__menu-link">инфоцентр</a>
           </li>
           <li class="header__menu-item">
-            <a href="/" class="header__menu-link">проверка подлинности</a>
+            <a href="#" class="header__menu-link">проверка подлинности</a>
           </li>
           <li class="header__menu-item">
-            <a href="/" class="header__menu-link">контакты</a>
+            <a href="#" class="header__menu-link">контакты</a>
           </li>
         </ul>
       </nav>
@@ -75,11 +93,11 @@
     </header>
 
     <main>
-      <section class="banner container">
+      <section class="banner container" id="banner">
         <h1 class="visually-hidden">MET Меры твердости Проверка подлинности</h1>
         <div class="banner__video">
           <div
-            class="banner__video-title"
+            class="banner__video-title title"
             data-list="06 05 04 03 02 "
             data-red="01">
             Точность без <br />
@@ -111,7 +129,7 @@
         </div>
       </section>
 
-      <section class="advantages container">
+      <section class="advantages container" id="advantages">
         <ul class="advantages__list">
           <li class="advantages__card">
             <div class="advantages__item">
@@ -257,9 +275,9 @@
         </div>
       </section>
 
-      <section class="products light">
+      <section class="products light" id="products">
         <div class="container">
-          <div class="products__title">Наша продукция</div>
+          <div class="title dark">Наша продукция</div>
           <div class="products__toggles d-flex justify-content-center">
             <div class="products__toggle-prod col-7">
               <div class="products__toggle btn selected">Твердомеры</div>
@@ -521,8 +539,8 @@
         </div>
       </section>
 
-      <section class="arguments container">
-        <div class="arguments__title title">Твердые аргументы</div>
+      <section class="arguments container" id="arguments">
+        <h2 class="title">Твердые аргументы</h2>
         <div class="arguments__cards">
           <div class="arguments__card">
             <div class="arguments__card-title">
@@ -665,7 +683,7 @@
         </div>
       </section>
 
-      <section class="production container">
+      <section class="production container" id="production">
         <h2 class="title">Наше производство</h2>
 
         <div class="slider-wrapper">
@@ -723,7 +741,7 @@
         </div>
       </section>
 
-      <section class="infocenter light">
+      <section class="infocenter light" id="infocenter">
         <div class="container">
           <h2 class="title">Инфоцентр</h2>
           <div class="slider-wrapper d-flex">
@@ -837,79 +855,71 @@
           <a href="/" class="infocenter__all-posts">все публикации</a>
         </div>
       </section>
+    </main>
 
-      <footer class="footer container">
-        <div class="footer__lists">
-          <div class="footer__list">
-            <a href="/" class="footer__logo">
-              <img
-                src="./src/icons/logo.svg"
-                alt="MET"
-                class="footer__logo-img"
-                width="60"
-                height="24" />
-            </a>
-          </div>
-          <div class="footer__list">
-            <ul>
-              <li><a href="/" class="footer__list-title">Продукция</a></li>
-              <li><a href="">Портативные твердомеры</a></li>
-              <li><a href="">Миниатюрные твердомеры</a></li>
-              <li><a href="">Эталонные меры твердости</a></li>
-              <li><a href="">Эталонные меры микротвердости</a></li>
-              <li><a href="">Подбор твердомера</a></li>
-              <li><a href="">Выбор мер твердости</a></li>
-              <li><a href="">Техническая поддержка</a></li>
-              <li><a href="">Часто задаваемые вопросы</a></li>
-            </ul>
-          </div>
-          <div class="footer__list">
-            <ul>
-              <li><a href="" class="footer__list-title">Компания</a></li>
-              <li><a href="">О компании</a></li>
-              <li><a href="">Музей твердометрии</a></li>
-              <li><a href="">Сертификация</a></li>
-              <li><a href="">Отзывы</a></li>
-              <li><a href="" class="footer__list-title">Дилеры</a></li>
-              <li><a href="" class="footer__list-title">Инфоцентр</a></li>
-              <li>
-                <a href="" class="footer__list-title">Проверка подлинности</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__list justify-content-between">
-            <a href="tel:+78002227526" class="footer_phone-number">
-              8 (800) 222-75-26
-            </a>
-            <button class="btn__action-footer" class="footer__action">
-              <img src="./src/icons/Phone.svg" alt="" />
-              Заказать звонок
-            </button>
-            <button class="btn__action-footer">
-              <img src="./src/icons/Email.svg" alt="" />info@tverdomer.ru
-            </button>
+    <footer class="footer container" id="footer">
+      <div class="footer__lists">
+        <div class="footer__list">
+          <a href="/" class="footer__logo">
+            <img
+              src="./src/icons/logo.svg"
+              alt="MET"
+              class="footer__logo-img"
+              width="60"
+              height="24" />
+          </a>
+        </div>
+        <div class="footer__list">
+          <ul>
+            <li><a href="/" class="footer__list-title">Продукция</a></li>
+            <li><a href="">Портативные твердомеры</a></li>
+            <li><a href="">Миниатюрные твердомеры</a></li>
+            <li><a href="">Эталонные меры твердости</a></li>
+            <li><a href="">Эталонные меры микротвердости</a></li>
+            <li><a href="">Подбор твердомера</a></li>
+            <li><a href="">Выбор мер твердости</a></li>
+            <li><a href="">Техническая поддержка</a></li>
+            <li><a href="">Часто задаваемые вопросы</a></li>
+          </ul>
+        </div>
+        <div class="footer__list">
+          <ul>
+            <li><a href="" class="footer__list-title">Компания</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Музей твердометрии</a></li>
+            <li><a href="">Сертификация</a></li>
+            <li><a href="">Отзывы</a></li>
+            <li><a href="" class="footer__list-title">Дилеры</a></li>
+            <li><a href="" class="footer__list-title">Инфоцентр</a></li>
+            <li>
+              <a href="" class="footer__list-title">Проверка подлинности</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__list justify-content-between">
+          <a href="tel:+78002227526" class="footer_phone-number">
+            8 (800) 222-75-26
+          </a>
+          <button class="btn__action-footer" class="footer__action">
+            <img src="./src/icons/Phone.svg" alt="" />
+            Заказать звонок
+          </button>
+          <button class="btn__action-footer">
+            <img src="./src/icons/Email.svg" alt="" />info@tverdomer.ru
+          </button>
+          <div class="footer__address">
+            <div class="footer__adrs-title">Офис и производство</div>
             <div class="footer__address">
-              <div class="footer__adrs-title">Офис и производство</div>
-              <div class="footer__address">
-                124498, г. Москва, Зеленоград, 4922-й проезд, д. 4с4, Технопарк
-                «ЭЛМА».
-              </div>
+              124498, г. Москва, Зеленоград, 4922-й проезд, д. 4с4, Технопарк
+              «ЭЛМА».
             </div>
           </div>
         </div>
-        <div class="footer__copyright container-wide">
-          <p>COPYRIGHT © 1991-2023 ООО «ЦЕНТР МЕТ» Все права защищены</p>
-          <p>Политика конфиденциальности</p>
-        </div>
-      </footer>
-    </main>
-
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/scripts.js"></script>
+      </div>
+      <div class="footer__copyright container-wide">
+        <p>COPYRIGHT © 1991-2023 ООО «ЦЕНТР МЕТ» Все права защищены</p>
+        <p>Политика конфиденциальности</p>
+      </div>
+    </footer>
   </body>
 </html>

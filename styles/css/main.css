@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "./fonts/fonts-link.css";
+@import "../../fonts/fonts-link.css";
 body {
   font-family: "HelveticaNeueCyr-Medium", sans-serif;
   background-color: #1b1f22 !important;
@@ -27,8 +27,6 @@ a:hover {
 
 .container {
   max-width: 1344px;
-  margin-inline: auto;
-  padding-inline: 15px;
 }
 
 h1,
@@ -114,11 +112,24 @@ p {
   transform: rotate(90deg);
 }
 
-section {
-  margin-block: 100px;
-}
 section .light {
   background-color: #fff;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: none;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1.35;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.title.dark {
+  color: #454545;
 }
 
 .btn {
@@ -298,6 +309,7 @@ span {
   position: relative;
   min-height: calc(100vh - 73px);
   padding-top: 73px;
+  margin-bottom: 100px;
 }
 .banner__video {
   display: flex;
@@ -316,7 +328,7 @@ span {
   transform: rotate(-90deg);
   width: 200px;
   left: -180px;
-  top: 85px;
+  top: 105px;
   letter-spacing: 5px;
 }
 .banner__video-title::after {
@@ -333,6 +345,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 30hv;
 }
 .banner__img-title {
   display: flex;
@@ -374,17 +387,17 @@ span {
   top: 12px;
 }
 .banner__bottom {
-  position: absolute;
-  left: -107px;
-  bottom: 150px;
-  width: 100%;
+  position: relative;
+  left: -10%;
+  margin-top: 100px;
+  width: 110%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 185px;
 }
 .banner__bottom-list {
   display: flex;
-  min-width: 1440px;
+  width: 100%;
   justify-content: space-between;
   align-items: end;
 }
@@ -414,6 +427,13 @@ span {
 .header__logo {
   flex-shrink: 0;
 }
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  height: 100%;
+}
 @media screen and (max-width: 990px) {
   .header__menu {
     order: 1;
@@ -423,6 +443,7 @@ span {
 .header__menu-list {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   -moz-column-gap: 50px;
        column-gap: 50px;
 }
@@ -523,10 +544,15 @@ span {
   box-shadow: 16px 0 0 currentColor;
 }
 
+.advantages {
+  padding-bottom: 100px;
+}
 .advantages__list {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
+  padding-inline: 0;
   gap: 30px;
 }
 .advantages__wrap {
@@ -702,20 +728,21 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .products__title {
   color: #454545;
   text-align: center;
   font-size: 40px;
   line-height: 1.35;
-  padding-top: 100px;
   padding-bottom: 60px;
 }
 .products__toggles {
   display: flex;
   gap: 55px;
   position: relative;
+  margin-bottom: 50px;
 }
 .products__toggles::after {
   position: absolute;
@@ -807,12 +834,7 @@ span {
   padding-right: 10px;
 }
 .products .slick-slide {
-  margin-left: 30px;
-}
-.products .slick-slider {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
+  margin-inline: 15px;
 }
 
 .slider-wrapper {
@@ -825,20 +847,16 @@ span {
   gap: 30px;
 }
 
-.slick-slide {
-  margin-inline: 15px;
-}
-
 .arguments {
-  padding-top: 100px;
-  padding-bottom: 130px;
+  padding-top: 110px;
+  padding-bottom: 100px;
 }
 .arguments__title {
   font-size: 40px;
   color: #fff;
   letter-spacing: 1.35;
   text-align: center;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 .arguments__cards {
   display: flex;
@@ -915,6 +933,10 @@ span {
 .arguments__social-name {
   font-size: 22px;
   line-height: 1.5;
+  color: #fff;
+}
+.production {
+  padding-bottom: 100px;
 }
 .production__items {
   gap: 72px;
@@ -988,14 +1010,17 @@ span {
 .production .slick-dots li button:before {
   color: #7f8589;
 }
-
-.title {
+.production__title {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   text-transform: none;
-  margin-bottom: 80px;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1.35;
+  text-align: center;
+  padding-bottom: 60px;
 }
 
 .infocenter {
@@ -1092,9 +1117,13 @@ span {
 .infocenter .title {
   color: #454545;
 }
+.infocenter .slick-slide {
+  margin-inline: 15px;
+}
 
 .footer {
   position: relative;
+  padding-top: 100px;
 }
 .footer::after {
   content: "";
@@ -1165,4 +1194,24 @@ span {
 }
 li {
   list-style-type: none;
+}
+
+.submenu {
+  display: none; /* Скрыть подменю по умолчанию */
+  position: absolute; /* Абсолютное позиционирование для создания выпадающего эффекта */
+  background-color: #fff; /* Цвет фона подменю */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для подменю */
+}
+
+/* Показываем подменю, когда пользователь наводит курсор на родительский пункт меню */
+.header__menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 10px; /* Отступы внутри элементов подменю */
+}
+
+.submenu li:hover {
+  background-color: #f5f5f5; /* Изменяем цвет фона при наведении на пункт меню */
 }/*# sourceMappingURL=main.css.map */

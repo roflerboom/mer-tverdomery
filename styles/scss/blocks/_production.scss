@@ -2,7 +2,7 @@
   // .production__prev-btn
 
   // .production__items
-
+  padding-bottom: 100px;
   &__items {
     gap: 72px;
     & .slick-list {
@@ -84,21 +84,16 @@
   .slick-dots li button:before {
     color: $text-gray;
   }
-}
-
-.container {
-}
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-transform: none;
-  margin-bottom: 80px;
-}
-.slider-wrapper {
-}
-.btn {
-}
-.d-flex {
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: none;
+    font-size: 40px;
+    color: $white;
+    letter-spacing: 1.35;
+    text-align: center;
+    padding-bottom: 60px;
+  }
 }
